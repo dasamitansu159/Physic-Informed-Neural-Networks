@@ -121,5 +121,5 @@ BC: periodic, $H(0,t) = H(L,t)$.
 
 ## Author
 Amitansu Das  
-B.Tech, Chemical Engineering, NIT Warangal  
+B.Tech, Chemical Engineering, Indian Institute of Petroleum and Energy
 Summer Intern 2024 @ IIT Delhi  
