@@ -49,7 +49,12 @@ IC: $h(0,x) = 2 \,\text{sech}(x)$,
 BC: periodic, $h(t,-5) = h(t,5), \; h_x(t,-5) = h_x(t,5)$.  
 
 **Result:**  
-![Schrödinger](results/schrodinger.png)
+
+<p align="center">
+  <img src="Results/Schrodinger_Equation_Solution/Schro1.png" alt="Real part" width="30%"/>
+  <img src="Results/Schrodinger_Equation_Solution/schro_exact.png" alt="Imag part" width="30%"/>
+  <img src="Results/Schrodinger_Equation_Solution/schro3.png" alt="Absolute value" width="30%"/>
+</p>
 
 ---
 
@@ -86,7 +91,7 @@ $u_x + v_y = 0$.
 BC: top lid ($y=1$): $u = U, v = 0$; other walls: $u = v = 0$.  
 
 **Result:**  
-![Lid Driven Cavity](results/ldc.png)
+![Lid Driven Cavity](results/ldc.pn)
 
 ---
 
@@ -97,7 +102,7 @@ IC: $H(x,0) = 1 + 0.001 \cos\left(\tfrac{2\pi x}{L}\right)$,
 BC: periodic, $H(0,t) = H(L,t)$.  
 
 **Result:**  
-![Thin Film](results/thinfilm.png)
+![Thin Film](Results/film_thickness_evolution_with_time.png)
 
 ---
 
