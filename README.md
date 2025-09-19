@@ -3,7 +3,7 @@
 This repository contains implementations of Physics-Informed Neural Networks (PINNs) for solving classical partial differential equations (PDEs).  
 PINNs integrate deep learning with physics constraints, ensuring that solutions satisfy governing laws such as conservation of mass, momentum, and energy.
 
-This work was completed during my Summer Internship 2024 at IIT Delhi.
+
 
 ---
 
@@ -16,7 +16,7 @@ IC: $u(x,0) = x^2(2-x)$,
 BC: $u(0,t) = 0, \; u(2,t) = 0$.  
 
 **Result:**  
-![Heat 1D](results/heat1d.png)
+![Heat 1D](Results/heat_1d.png)
 
 ---
 
@@ -26,8 +26,8 @@ The PDE is $u_t = \alpha^2 (u_{xx} + u_{yy})$ with $\alpha = 0.1$,
 IC: $u(x,y,0) = \sin(\pi x)\sin(\pi y)$,  
 BC: $u(x,0,t) = u(x,1,t) = u(0,y,t) = u(1,y,t) = 0$.  
 
-**Result:**  
-![Heat 2D](results/heat2d.png)
+**Result:**  at t = 0
+![Heat 2D](Results/heat1.png)
 
 ---
 
@@ -38,7 +38,7 @@ IC: $u(x,y,0) = \sin(\pi x)\sin(\pi y)$,
 BC: periodic, $u(0,y,t) = u(1,y,t), \; u(x,0,t) = u(x,1,t)$.  
 
 **Result:**  
-![Advection](results/advection.png)
+![Advection](Results/t0advnew.png)
 
 ---
 
@@ -65,7 +65,11 @@ IC: $u(0,x) = -\sin(\pi x)$,
 BC: $u(t,-1) = u(t,1) = 0$.  
 
 **Result:**  
-![Burgers](results/burgers.png)
+<p align="center">
+  <img src="Results/Burger_Equation_Solution/burger1.png" alt="Real part" width="33%"/>
+  <img src="Results/Burger_Equation_Solution/burger2.png" alt="Imag part" width="33%"/>
+  <img src="Results/Burger_Equation_Solution/correct.jpg" alt="Absolute value" width="33%"/>
+</p>
 
 ---
 
@@ -76,7 +80,10 @@ IC: $u(x,0) = \cos(\pi x)$,
 BC: $u(-1,t) = u(1,t)$.  
 
 **Result:**  
-![Allen-Cahn](results/allen_cahn.png)
+<p align="center">
+  <img src="Results/Allen_Cahn_Equation_Solution/Allen_Cahn_1.png" alt="2 variables" width="100%"/>
+  <img src="Results/Allen_Cahn_Equation_Solution/Allen_Cahn_2.png" alt="1 variable" width="100%"/>
+</p>
 
 ---
 
@@ -91,7 +98,7 @@ $u_x + v_y = 0$.
 BC: top lid ($y=1$): $u = U, v = 0$; other walls: $u = v = 0$.  
 
 **Result:**  
-![Lid Driven Cavity](results/ldc.pn)
+![Lid Driven Cavity](Results/Lid_Driven_Cavity_Solution/ldc.png)
 
 ---
 
@@ -114,12 +121,10 @@ BC: periodic, $H(0,t) = H(L,t)$.
 ---
 
 ## References
-- Raissi, M., Perdikaris, P., and Karniadakis, G. E. (2019). Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear PDEs. *Journal of Computational Physics*, 378, 686–707.  
-- Additional references included in my Internship Report (attached in this repository).  
+- Raissi, M., Perdikaris, P., and Karniadakis, G. E. (2019). Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear PDEs. *Journal of Computational Physics*, 378, 686–707.    
 
 ---
 
 ## Author
 Amitansu Das  
 B.Tech, Chemical Engineering, Indian Institute of Petroleum and Energy
-Summer Intern 2024 @ IIT Delhi  
